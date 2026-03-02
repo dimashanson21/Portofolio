@@ -1,14 +1,22 @@
 function App() {
   return (
-    <div className="bg-[#0b0b0b] text-white min-h-screen font-sans">
+    <div className="bg-[#0a0a0a] text-white min-h-screen font-sans">
 
       {/* NAVBAR */}
-      <nav className="fixed top-0 w-full bg-black/60 backdrop-blur-md flex justify-center gap-10 py-4 z-50 border-b border-gray-800">
-        <a href="#about" className="hover:text-gray-300">About</a>
-        <a href="#skills" className="hover:text-gray-300">Skills</a>
-        <a href="#experience" className="hover:text-gray-300">Experience</a>
-        <a href="#portfolio" className="hover:text-gray-300">Projects</a>
-        <a href="#contact" className="hover:text-gray-300">Contact</a>
+      <nav className="fixed top-0 w-full bg-black/50 backdrop-blur-lg border-b border-gray-800 z-50">
+        <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+          <h1 className="font-semibold text-lg tracking-wide">
+            Dimas Hanson
+          </h1>
+
+          <div className="space-x-8 text-gray-300 hidden md:block">
+            <a href="#about" className="hover:text-white transition">About</a>
+            <a href="#skills" className="hover:text-white transition">Skills</a>
+            <a href="#experience" className="hover:text-white transition">Experience</a>
+            <a href="#portfolio" className="hover:text-white transition">Projects</a>
+            <a href="#contact" className="hover:text-white transition">Contact</a>
+          </div>
+        </div>
       </nav>
 
       {/* HERO */}
@@ -16,68 +24,70 @@ function App() {
         <img
           src="/Passport Picture.jpeg"
           alt="Dimas Hanson"
-          className="w-36 h-36 rounded-full object-cover border-4 border-gray-700 mb-6"
+          className="w-40 h-40 rounded-full object-cover border-4 border-gray-700 shadow-lg mb-8"
         />
 
-        <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+        <h1 className="text-6xl md:text-7xl font-bold tracking-tight">
           Dimas Hanson
         </h1>
 
-        <p className="text-gray-400 mt-4 text-lg">
-          Full Stack Developer · Former Video Editor
+        <p className="text-gray-400 mt-5 text-lg max-w-xl">
+          Full Stack Developer transitioning from Video Editing,
+          combining creativity with modern web development.
         </p>
 
-        <div className="mt-8 flex gap-4">
+        <div className="mt-10 flex gap-4">
           <a
             href="#portfolio"
-            className="px-6 py-3 bg-white text-black rounded-xl font-semibold hover:bg-gray-300 transition"
+            className="px-7 py-3 bg-white text-black rounded-xl font-medium hover:scale-105 transition"
           >
-            View Work
+            View Projects
           </a>
 
           <a
             href="#contact"
-            className="px-6 py-3 border border-gray-600 rounded-xl hover:bg-gray-800 transition"
+            className="px-7 py-3 border border-gray-700 rounded-xl hover:bg-gray-900 transition"
           >
-            Contact
+            Contact Me
           </a>
         </div>
       </section>
 
       {/* ABOUT */}
-      <section id="about" className="py-24 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-6">About Me</h2>
+      <section id="about" className="py-28 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl font-semibold mb-8">About Me</h2>
 
-          <p className="text-gray-400 leading-relaxed">
+          <p className="text-gray-400 leading-relaxed text-lg">
             I am a former video editor transitioning into a Full Stack Developer.
-            My creative background allows me to approach web development with
-            strong visual awareness, storytelling, and attention to detail.
-            Currently focused on building responsive web applications using
-            modern technologies such as HTML, CSS, and TypeScript.
+            My creative background strengthens my approach to building modern,
+            visually engaging, and responsive web applications using HTML,
+            CSS, and TypeScript.
           </p>
         </div>
       </section>
 
       {/* SKILLS */}
-      <section id="skills" className="py-24 bg-[#111] px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-10">Skills</h2>
+      <section id="skills" className="py-28 bg-[#111] px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-semibold text-center mb-14">
+            Skills
+          </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
 
-            <div className="p-6 bg-black rounded-2xl border border-gray-800 hover:border-gray-600 transition">
-              <h3 className="text-xl font-semibold mb-2">Frontend</h3>
+            <div className="bg-black p-8 rounded-2xl border border-gray-800 hover:translate-y-[-6px] transition">
+              <h3 className="text-xl font-semibold mb-3">Frontend</h3>
               <p className="text-gray-400">HTML · CSS · TypeScript</p>
             </div>
 
-            <div className="p-6 bg-black rounded-2xl border border-gray-800 hover:border-gray-600 transition">
-              <h3 className="text-xl font-semibold mb-2">Tools</h3>
+            <div className="bg-black p-8 rounded-2xl border border-gray-800 hover:translate-y-[-6px] transition">
+              <h3 className="text-xl font-semibold mb-3">Tools</h3>
               <p className="text-gray-400">Git · Vite · VS Code</p>
             </div>
 
-            <div className="p-6 bg-black rounded-2xl border border-gray-800 hover:border-gray-600 transition">
-              <h3 className="text-xl font-semibold mb-2">Creative</h3>
+            <div className="bg-black p-8 rounded-2xl border border-gray-800 hover:translate-y-[-6px] transition">
+              <h3 className="text-xl font-semibold mb-3">Creative</h3>
               <p className="text-gray-400">Video Editing · Content Creation</p>
             </div>
 
@@ -86,43 +96,47 @@ function App() {
       </section>
 
       {/* EXPERIENCE */}
-      <section id="experience" className="py-24 px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-8">Experience</h2>
+      <section id="experience" className="py-28 px-6">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-semibold mb-12 text-center">
+            Experience
+          </h2>
 
-          <div className="bg-[#111] p-6 rounded-2xl border border-gray-800">
+          <div className="bg-[#111] p-8 rounded-2xl border border-gray-800">
             <h3 className="text-xl font-semibold">
               Freelance Video Editor
             </h3>
 
-            <p className="text-gray-500 text-sm mb-3">
+            <p className="text-gray-500 text-sm mt-1 mb-4">
               2022 — 2024
             </p>
 
-            <p className="text-gray-400">
-              Produced visual content while developing strong design thinking,
-              deadline management, and creative problem-solving skills that now
-              support my journey into software development.
+            <p className="text-gray-400 leading-relaxed">
+              Created engaging visual content while developing creativity,
+              storytelling ability, and strong project management skills now
+              applied in software development.
             </p>
           </div>
         </div>
       </section>
 
       {/* PROJECTS */}
-      <section id="portfolio" className="py-24 bg-[#111] px-6">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-bold mb-10">Projects</h2>
+      <section id="portfolio" className="py-28 bg-[#111] px-6">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-semibold text-center mb-14">
+            Projects
+          </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-10">
 
-            <div className="p-6 bg-black rounded-2xl border border-gray-800 hover:scale-105 transition">
-              <h3 className="text-xl font-semibold mb-2">
+            <div className="bg-black p-8 rounded-2xl border border-gray-800 hover:scale-105 transition shadow-lg">
+              <h3 className="text-xl font-semibold mb-3">
                 Personal Portfolio Website
               </h3>
 
               <p className="text-gray-400">
-                Developed a responsive personal portfolio using React, Vite,
-                and Tailwind CSS to showcase skills and professional background.
+                Built using React, Vite, and Tailwind CSS to showcase skills,
+                experience, and development journey with responsive design.
               </p>
             </div>
 
@@ -131,10 +145,12 @@ function App() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="py-24 px-6 text-center">
-        <h2 className="text-3xl font-bold mb-6">Contact</h2>
+      <section id="contact" className="py-28 px-6 text-center">
+        <h2 className="text-4xl font-semibold mb-6">
+          Contact
+        </h2>
 
-        <p className="text-gray-400">
+        <p className="text-gray-400 text-lg">
           dimdim.hanson@gmail.com
         </p>
 
