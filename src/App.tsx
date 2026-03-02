@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="bg-[#0a0a0a] text-white min-h-screen font-sans">
+    <div className="bg-[#4682B4] text-white min-h-screen font-sans">
 
       {/* NAVBAR */}
       <nav className="fixed top-0 w-full bg-black/60 backdrop-blur-lg border-b border-gray-800 z-50">
@@ -112,11 +112,11 @@ function App() {
 
           <div className="bg-[#111] p-8 rounded-2xl border border-gray-800 hover:border-gray-600 transition">
             <h3 className="text-xl font-semibold">
-              Freelance Video Editor
+              Full-Time Video Editor
             </h3>
 
             <p className="text-gray-500 text-sm mt-2 mb-4">
-              2022 — 2024
+              2023 — 2024
             </p>
 
             <p className="text-gray-400 leading-relaxed">
