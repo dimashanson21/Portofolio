@@ -1,15 +1,15 @@
 function App() {
   return (
-    <div className="bg-[#0b1220] text-white min-h-screen font-sans">
+    <div className="bg-[#050505] text-white min-h-screen font-sans">
 
       {/* NAVBAR */}
-      <nav className="fixed top-0 w-full bg-[#0b1220]/80 backdrop-blur-lg border-b border-blue-900/40 z-50">
+      <nav className="fixed top-0 w-full bg-black/70 backdrop-blur-lg border-b border-gray-800 z-50">
         <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-          <h1 className="font-semibold tracking-wide text-lg text-blue-400">
+          <h1 className="font-semibold tracking-wide text-lg text-white">
             Dimas Hanson
           </h1>
 
-          <div className="space-x-8 text-gray-300 hidden md:flex">
+          <div className="space-x-8 text-gray-400 hidden md:flex">
             <a href="#about" className="hover:text-blue-400 transition">About</a>
             <a href="#skills" className="hover:text-blue-400 transition">Skills</a>
             <a href="#experience" className="hover:text-blue-400 transition">Experience</a>
@@ -25,11 +25,11 @@ function App() {
         <img
           src="/Passport Picture.jpeg"
           alt="Dimas Hanson"
-          className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-blue-500 shadow-xl"
+          className="w-36 h-36 md:w-44 md:h-44 rounded-full object-cover border-4 border-gray-700 shadow-xl"
         />
 
-        {/* BLUE GRADIENT NAME */}
-        <h1 className="text-5xl md:text-6xl font-bold mt-8 tracking-tight bg-gradient-to-r from-blue-400 via-blue-300 to-cyan-400 bg-clip-text text-transparent">
+        {/* NAME */}
+        <h1 className="text-5xl md:text-6xl font-bold mt-8 tracking-tight">
           Dimas Hanson
         </h1>
 
@@ -48,7 +48,7 @@ function App() {
 
           <a
             href="#contact"
-            className="px-7 py-3 border border-blue-500 rounded-xl hover:bg-blue-900/30 transition"
+            className="px-7 py-3 border border-gray-700 rounded-xl hover:bg-gray-900 transition"
           >
             Contact
           </a>
@@ -60,7 +60,7 @@ function App() {
       <section id="about" className="py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
 
-          <h2 className="text-4xl font-semibold mb-10 text-blue-400">
+          <h2 className="text-4xl font-semibold mb-10">
             About Me
           </h2>
 
@@ -74,26 +74,26 @@ function App() {
       </section>
 
       {/* SKILLS */}
-      <section id="skills" className="py-24 bg-[#0f172a] px-6">
+      <section id="skills" className="py-24 bg-[#0a0a0a] px-6">
         <div className="max-w-6xl mx-auto">
 
-          <h2 className="text-4xl font-semibold text-center mb-14 text-blue-400">
+          <h2 className="text-4xl font-semibold text-center mb-14">
             Skills
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
 
-            <div className="bg-[#020617] p-8 rounded-2xl border border-blue-900 hover:-translate-y-3 hover:border-blue-500 transition duration-300">
+            <div className="bg-black p-8 rounded-2xl border border-gray-800 hover:-translate-y-3 hover:border-blue-500 transition duration-300">
               <h3 className="text-xl font-semibold mb-3">Frontend</h3>
               <p className="text-gray-400">HTML · CSS · TypeScript</p>
             </div>
 
-            <div className="bg-[#020617] p-8 rounded-2xl border border-blue-900 hover:-translate-y-3 hover:border-blue-500 transition duration-300">
+            <div className="bg-black p-8 rounded-2xl border border-gray-800 hover:-translate-y-3 hover:border-blue-500 transition duration-300">
               <h3 className="text-xl font-semibold mb-3">Tools</h3>
               <p className="text-gray-400">Git · Vite · VS Code</p>
             </div>
 
-            <div className="bg-[#020617] p-8 rounded-2xl border border-blue-900 hover:-translate-y-3 hover:border-blue-500 transition duration-300">
+            <div className="bg-black p-8 rounded-2xl border border-gray-800 hover:-translate-y-3 hover:border-blue-500 transition duration-300">
               <h3 className="text-xl font-semibold mb-3">Creative</h3>
               <p className="text-gray-400">Video Editing · Content Creation</p>
             </div>
@@ -106,11 +106,11 @@ function App() {
       <section id="experience" className="py-24 px-6">
         <div className="max-w-4xl mx-auto">
 
-          <h2 className="text-4xl font-semibold text-center mb-12 text-blue-400">
+          <h2 className="text-4xl font-semibold text-center mb-12">
             Experience
           </h2>
 
-          <div className="bg-[#020617] p-8 rounded-2xl border border-blue-900 hover:border-blue-500 transition">
+          <div className="bg-black p-8 rounded-2xl border border-gray-800 hover:border-blue-500 transition">
             <h3 className="text-xl font-semibold">
               Full-Time Video Editor
             </h3>
@@ -130,16 +130,16 @@ function App() {
       </section>
 
       {/* PROJECTS */}
-      <section id="portfolio" className="py-24 bg-[#0f172a] px-6">
+      <section id="portfolio" className="py-24 bg-[#0a0a0a] px-6">
         <div className="max-w-6xl mx-auto">
 
-          <h2 className="text-4xl font-semibold text-center mb-14 text-blue-400">
+          <h2 className="text-4xl font-semibold text-center mb-14">
             Projects
           </h2>
 
           <div className="grid md:grid-cols-2 gap-10">
 
-            <div className="bg-[#020617] p-8 rounded-2xl border border-blue-900 hover:-translate-y-3 hover:border-blue-400 transition duration-300 shadow-lg">
+            <div className="bg-black p-8 rounded-2xl border border-gray-800 hover:-translate-y-3 hover:border-blue-500 transition duration-300 shadow-lg">
               <h3 className="text-xl font-semibold mb-3">
                 Personal Portfolio Website
               </h3>
@@ -158,7 +158,7 @@ function App() {
       {/* CONTACT */}
       <section id="contact" className="py-24 px-6 text-center">
 
-        <h2 className="text-4xl font-semibold mb-6 text-blue-400">
+        <h2 className="text-4xl font-semibold mb-6">
           Contact
         </h2>
 
