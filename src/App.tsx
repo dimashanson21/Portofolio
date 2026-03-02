@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="bg-[#000000] text-white min-h-screen font-sans">
+    <div className="bg-[#FFFFFF] text-white min-h-screen font-sans">
 
       {/* NAVBAR */}
       <nav className="fixed top-0 w-full bg-black/60 backdrop-blur-lg border-b border-gray-800 z-50">
