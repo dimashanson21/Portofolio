@@ -5,7 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: [
+          "Avenir",
+          "Avenir Next",
+          "Segoe UI",
+          "Helvetica Neue",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
+      },
+    },
   },
   plugins: [],
 }
